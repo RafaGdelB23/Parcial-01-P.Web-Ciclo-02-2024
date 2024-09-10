@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Parcial-01</title>
+	<link rel="icon" href="Fotos/Otros/icono.png">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	
+	<!-- Encabezado -->
+
+	<header id="encabezado">
+		<h1 class="h1">
+			<img src="Fotos/Otros/Logo.png" id="Logo" alt="Logo">
+				<nav class="NavBar">
+					<li class="list-navBar">
+							<a href="#encabezado"><i class='bx bx-home-alt-2'></i>Inicio</a>
+							<a href="#beneficios"><i class='bx bx-trending-up'></i>Beneficios</a>
+							<a href="#caracteristica"><i class='bx bxs-watch-alt'></i>Características</a>
+							<a href="#"><i class='bx bx-message-dots'></i>Reseñas</a>
+							<a href="#"><i class='bx bx-purchase-tag-alt'></i>Compra</a>
+							<a href="#"><i class='bx bx-info-circle'></i>Sobre nosotros</a></li>
+				</nav>
+		</h1>
+	</header>
+
+	<main class="main">
+
+			<!-- Presentación del producto -->
+
+		<section class="presentProduct">
+			<img src="Fotos/Otros/main-img.webp" alt="SmartWatch" id="main-img">
+			<p class="nameProducto">Apple Watch Ultra 2</p>
+			<p class="description">Innovación<br>Elegancia<br>Avanzado</p>
+			<p class="message">Preparate para algo nunca antes visto.<br>Poder sin límites.</p>
+		</section>
+
+		<section id="beneficios">
+			<div class="beneficios-container">
+					<button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+					<div class="beneficios-img">
+							<div class="beneficio-item">
+								<p class="titulos-img">Salud</p>
+									<img id="b1" src="Fotos/Beneficios/Salud.png" alt="beneficio1">
+									<p class="description-img">Cuídate en todo momento</p>
+							</div>
+							<div class="beneficio-item">
+								<p class="titulos-img">Fitness</p>
+									<img id="b2" src="Fotos/Beneficios/FitnessActividad.jpg" alt="beneficio2">
+									<p class="description-img">Mantente en forma e informado</p>
+							</div>
+							<div class="beneficio-item">
+								<p class="titulos-img">Seguridad</p>
+									<img id="b3" src="Fotos/Beneficios/Security.jpg" alt="beneficio3">
+									<p class="description-img">Siempre mantente comunicado</p>
+							</div>
+							<div class="beneficio-item">
+								<p class="titulos-img">Conectividad</p>
+									<img id="b4" src="Fotos/Beneficios/Connectivity.jpg" alt="beneficio4">
+									<p class="description-img">Una llamada puede cambiar un día</p>
+							</div>
+							<div class="beneficio-item">
+								<p class="titulos-img">Personalización</p>
+									<img id="b5" src="Fotos/Beneficios/Personalización.png" alt="beneficio5">
+									<p class="description-img">Que tus gustos no tengan límite</p>
+							</div>
+					</div>
+					<button class="next" onclick="moveSlide(1)">&#10095;</button>
+			</div>
+	</section>
+	
+	<section id="caracteristica">
+		<h2 class="intro-caracteristicas">Especificaciones ⚙️</h2>
+
+		<div class="caracteristicas-container">
+			<div class="caracteristica-item">
+				<i class='bx bxs-watch-alt'></i>
+				<p class="titulo-caracteristica">Tamaño y Peso</p>
+				<p class="desc-caracteristica">Alto: 49 mm <br> Ancho: 44 mm<br>Grosor: 14.4 mm <br> Peso: Titanio: 61.66 g</p>
+			</div>
+			<div class="caracteristica-item">
+				<i class='bx bxs-watch-alt'></i>
+				<p class="titulo-caracteristica">Pantalla</p>
+				<p class="desc-caracteristica">Pantalla plana de cristal de zafiro<br>Pantalla Retina OLED LTPO2 siempre activa<br>Brillo mínimo de 1 nit</p>
+			</div>
+			<div class="caracteristica-item">
+				<i class='bx bx-battery'></i>
+				<p class="titulo-caracteristica">Energía y Batería</p>
+				<p class="desc-caracteristica">Batería para varios días; hasta 36 horas de uso normal<br>72 horas en el modo ahorro de batería<br>Carga rápida</p>
+			</div>
+			<div class="caracteristica-item">
+				<i class='bx bx-chip'></i>
+				<p class="titulo-caracteristica">Chip</p>
+				<p class="desc-caracteristica">64 GB de capacidad<br>S9 SiP con procesador de doble núcleo de 64 bit<br>Neural Engine de 4 núcleos</p>
+			</div>
+			<div class="caracteristica-item">
+				<i class='bx bx-user-voice'></i>
+				<p class="titulo-caracteristica">Audio</p>
+				<p class="desc-caracteristica">Sistema de tres micrófonos con tecnología beamforming<br>Reducción del ruido del viento<br>Dos bocinas<br>Reproducción de contenido multimedia</p>
+			</div>
+			<div class="caracteristica-item">
+				<i class='bx bxs-lock-alt'></i>
+				<p class="titulo-caracteristica">Seguridad</p>
+				<p class="desc-caracteristica">Emergencia SOS<br>Llamadas de emergencia en el extranjero<br>Detección de choques y caídas</p>
+			</div>
+			<div class="caracteristica-item">
+				<i class='bx bx-heart'></i>
+				<p class="titulo-caracteristica">Durabilidad</p>
+				<p class="desc-caracteristica">Clasificación de resistencia al agua de 100 metros<br>Clasificación de resistencia al polvo</p>
+			</div>
+			<div class="caracteristica-item">
+				<i class='bx bxs-universal-access'></i>
+				<p class="titulo-caracteristica">Accesibilidad</p>
+				<p class="desc-caracteristica">Funcionalidades de accesibilidad integradas para personas con dificultades visuales, motrices, auditivas y cognitivas.</p>
+			</div>
+			<div class="caracteristica-item">
+				<i class='bx bx-joystick-button'></i>
+				<p class="titulo-caracteristica">Controles</p>
+				<p class="desc-caracteristica">Botón de Acción personalizable<br>Digital Crown con respuesta háptica<br>Botón lateral<br>Gesto de doble toque</p>
+			</div>
+		</div>
+		<div class="botones-caracteristica">
+			<h3 class="titulo-botones">Botones</h3>
+			<ol class="listado-botones">
+				<li>Micrófono</li>
+				<li>Bocina</li>
+				<li>Botón de Acción</li>
+				<li>Sirena</li>
+				<li>Micrófono</li>
+				<li>Botón lateral</li>
+				<li>Micrófono</li>
+				<li>Digital Crown</li>
+				<li>Profundímetro/sensor de temperatura del agua</li>
+			</ol>
+				<img src="Fotos/Característica/Botones.png" id="botones-img">
+		</div>
+	</section>
+
+	</main>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

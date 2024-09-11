@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Registro.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header class="Registro">
+        <h1 class="h1">Apple</h1>
+    </header>
+
+    <main>
+        <h2 class="h2">Identifícate/Registrate</h2>
+        <p class="seguridad">
+            🔒 Tus datos están protegidos
+        </p>
+        <form id="registro-form">
+            <div class="Datos">
+                <label id="nombre" for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label id="Email" for="email">Dirección Email</label>
+                <input type="email" id="email" name="email" required>
+                <label id="Contraseña" for="Contraseña">Contraseña</label>
+                <input type="password" id="Contraseña" name="Contraseña" required>
+                <label id="numero" for="numero">Número de teléfono</label>
+                <input type="text" id="numero" name="numero" required>
+            </div>
+            <div class="Condiciones">
+                <label class="condiciones-label" id="TC" for="TC">
+                    Estoy de acuerdo con los <a href="TerminosCondiciones.html" target="_blank">Términos y condiciones</a>
+                </label>
+                <input type="checkbox" name="TC" required >
+                <label class="condiciones-label" id="PP" for="PP">
+                    Estoy de acuerdo con la <a href="PolíticaDePrivacidad.html" target="_blank">Política de Privacidad</a>
+                </label>
+                <input type="checkbox" name="PP" required>
+                <button class="hecho" id="submit-btn" type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

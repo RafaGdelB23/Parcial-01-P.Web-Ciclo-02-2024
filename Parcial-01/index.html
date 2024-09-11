@@ -14,16 +14,23 @@
 
 	<header id="encabezado">
 		<h1 class="h1">
-			<img src="Fotos/Otros/Logo.png" id="Logo" alt="Logo">
+			<div class="logo">
+				<a href="#encabezado"><img src="Fotos/Otros/Logo.png" id="Logo" alt="Logo"></a>
+			</div>
+			<div class="navegacion">
 				<nav class="NavBar">
 					<li class="list-navBar">
-							<a href="#encabezado"><i class='bx bx-home-alt-2'></i>Inicio</a>
-							<a href="#beneficios"><i class='bx bx-trending-up'></i>Beneficios</a>
-							<a href="#caracteristica"><i class='bx bxs-watch-alt'></i>Características</a>
-							<a href="#"><i class='bx bx-message-dots'></i>Reseñas</a>
-							<a href="#"><i class='bx bx-purchase-tag-alt'></i>Compra</a>
-							<a href="#"><i class='bx bx-info-circle'></i>Sobre nosotros</a></li>
+						<a href="#beneficios"><i class='bx bx-trending-up'></i>Beneficios</a>
+						<a href="#caracteristica"><i class='bx bxs-watch-alt'></i>Características</a>
+						<a href="#testimonios"><i class='bx bx-message-dots'></i>Reseñas</a>
+						<a href="#compra"><i class='bx bx-purchase-tag-alt'></i>Compra</a>
+						<a href="#PieDePagina"><i class='bx bx-info-circle'></i>Sobre nosotros</a></li>
 				</nav>
+			</div>
+			<div class="img-comp">
+				<i class='bx bx-cart' id="carritoIcon" ></i>
+				<span id="carritoContador">0</span>
+			</div>
 		</h1>
 	</header>
 
@@ -33,73 +40,89 @@
 
 		<section class="presentProduct">
 			<img src="Fotos/Otros/main-img.webp" alt="SmartWatch" id="main-img">
-			<p class="nameProducto">Apple Watch Ultra 2</p>
+			<p class="nameProducto">Apple Watch</p>
 			<p class="description">Innovación<br>Elegancia<br>Avanzado</p>
 			<p class="message">Preparate para algo nunca antes visto.<br>Poder sin límites.</p>
 		</section>
 
 		<section id="beneficios">
 			<div class="beneficios-container">
-					<button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-					<div class="beneficios-img">
-							<div class="beneficio-item">
-								<p class="titulos-img">Salud</p>
-									<img id="b1" src="Fotos/Beneficios/Salud.png" alt="beneficio1">
-									<p class="description-img">Cuídate en todo momento</p>
-							</div>
-							<div class="beneficio-item">
-								<p class="titulos-img">Fitness</p>
-									<img id="b2" src="Fotos/Beneficios/FitnessActividad.jpg" alt="beneficio2">
-									<p class="description-img">Mantente en forma e informado</p>
-							</div>
-							<div class="beneficio-item">
-								<p class="titulos-img">Seguridad</p>
-									<img id="b3" src="Fotos/Beneficios/Security.jpg" alt="beneficio3">
-									<p class="description-img">Siempre mantente comunicado</p>
-							</div>
-							<div class="beneficio-item">
-								<p class="titulos-img">Conectividad</p>
-									<img id="b4" src="Fotos/Beneficios/Connectivity.jpg" alt="beneficio4">
-									<p class="description-img">Una llamada puede cambiar un día</p>
-							</div>
-							<div class="beneficio-item">
-								<p class="titulos-img">Personalización</p>
-									<img id="b5" src="Fotos/Beneficios/Personalización.png" alt="beneficio5">
-									<p class="description-img">Que tus gustos no tengan límite</p>
-							</div>
-					</div>
-					<button class="next" onclick="moveSlide(1)">&#10095;</button>
+			  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+			  <div class="beneficios-img">
+				<div class="beneficio-item">
+				  <p class="titulos-img">Salud</p>
+				  <img id="b1" src="Fotos/Beneficios/Salud.png" alt="beneficio1">
+				  <p class="description-img">Cuídate en todo momento</p>
+				  <i class='bx bx-plus-circle' onclick="openModal('Salud ❤️', 'Cuídate con monitoreo avanzado y alertas de salud. Mantente informado sobre tu bienestar.')"></i>
+				</div>
+				<div class="beneficio-item">
+				  <p class="titulos-img">Fitness</p>
+				  <img id="b2" src="Fotos/Beneficios/FitnessActividad.jpg" alt="beneficio2">
+				  <p class="description-img">Mantente en forma e informado</p>
+				  <i class='bx bx-plus-circle' onclick="openModal('Fitness 🏃', 'Registra todas tus actividades y mantén tu cuerpo en forma con las funciones de fitness.')"></i>
+				</div>
+				<div class="beneficio-item">
+				  <p class="titulos-img">Seguridad</p>
+				  <img id="b3" src="Fotos/Beneficios/Security.jpg" alt="beneficio3">
+				  <p class="description-img">Siempre mantente comunicado</p>
+				  <i class='bx bx-plus-circle' onclick="openModal('Seguridad 🔒', 'Con funciones de emergencia y detección de accidentes, siempre estarás protegido.')"></i>
+				</div>
+				<div class="beneficio-item">
+				  <p class="titulos-img">Conectividad</p>
+				  <img id="b4" src="Fotos/Beneficios/Connectivity.jpg" alt="beneficio4">
+				  <p class="description-img">Una llamada puede cambiar un día</p>
+				  <i class='bx bx-plus-circle' onclick="openModal('Conectividad 🌐', 'Conéctate con tus seres queridos en cualquier momento, en cualquier lugar.')"></i>
+				</div>
+				<div class="beneficio-item">
+				  <p class="titulos-img">Personalización</p>
+				  <img id="b5" src="Fotos/Beneficios/Personalización.png" alt="beneficio5">
+				  <p class="description-img">Que tus gustos no tengan límite</p>
+				  <i class='bx bx-plus-circle' onclick="openModal('Personalización 🎨', 'Configura y personaliza cada aspecto de tu reloj según tu estilo.')"></i>
+				</div>
+			  </div>
+			  <button class="next" onclick="moveSlide(1)">&#10095;</button>
 			</div>
-	</section>
+		  </section>
+		  
+		  <!-- Modal -->
+		  <div id="beneficioModal" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="closeModal()">&times;</span>
+			  <h2 id="modalTitulo"></h2>
+			  <p id="modalTexto"></p>
+			</div>
+		  </div>
 	
 	<section id="caracteristica">
 		<h2 class="intro-caracteristicas">Especificaciones ⚙️</h2>
 
 		<div class="caracteristicas-container">
 			<div class="caracteristica-item">
-				<i class='bx bxs-watch-alt'></i>
-				<p class="titulo-caracteristica">Tamaño y Peso</p>
-				<p class="desc-caracteristica">Alto: 49 mm <br> Ancho: 44 mm<br>Grosor: 14.4 mm <br> Peso: Titanio: 61.66 g</p>
+				<i class='bx bx-location-plus'></i>
+				<p class="titulo-caracteristica">GPS Integrado</p>
+				<p class="desc-caracteristica">Seguimiento de ubicación y rutas<br> sin necesidad del teléfono.</p>
 			</div>
 			<div class="caracteristica-item">
 				<i class='bx bxs-watch-alt'></i>
 				<p class="titulo-caracteristica">Pantalla</p>
-				<p class="desc-caracteristica">Pantalla plana de cristal de zafiro<br>Pantalla Retina OLED LTPO2 siempre activa<br>Brillo mínimo de 1 nit</p>
+				<p class="desc-caracteristica">Pantalla Retina táctil con alta resolución.<br>Brillo alto y resolución clara, visible en exteriores.</p>
 			</div>
 			<div class="caracteristica-item">
 				<i class='bx bx-battery'></i>
 				<p class="titulo-caracteristica">Energía y Batería</p>
-				<p class="desc-caracteristica">Batería para varios días; hasta 36 horas de uso normal<br>72 horas en el modo ahorro de batería<br>Carga rápida</p>
+				<p class="desc-caracteristica">Duración de batería de hasta 18 horas<br> y 36 horas en el modo ahorro de batería.</p>
 			</div>
 			<div class="caracteristica-item">
-				<i class='bx bx-chip'></i>
-				<p class="titulo-caracteristica">Chip</p>
-				<p class="desc-caracteristica">64 GB de capacidad<br>S9 SiP con procesador de doble núcleo de 64 bit<br>Neural Engine de 4 núcleos</p>
+				<i class='bx bx-water' ></i>
+				<p class="titulo-caracteristica">Resistencia al Agua</p>
+				<p class="desc-caracteristica">Sumergible hasta 50 metros,<br> ideal para deportes como natación.</p>
 			</div>
 			<div class="caracteristica-item">
-				<i class='bx bx-user-voice'></i>
-				<p class="titulo-caracteristica">Audio</p>
-				<p class="desc-caracteristica">Sistema de tres micrófonos con tecnología beamforming<br>Reducción del ruido del viento<br>Dos bocinas<br>Reproducción de contenido multimedia</p>
+				<i class='bx bx-bed'></i>
+				<p class="titulo-caracteristica">Seguimiento de Sueño</p>
+				<p class="desc-caracteristica">Monitoreo detallado de ciclos de sueño y descanso.
+
+				</p>
 			</div>
 			<div class="caracteristica-item">
 				<i class='bx bxs-lock-alt'></i>
@@ -108,8 +131,8 @@
 			</div>
 			<div class="caracteristica-item">
 				<i class='bx bx-heart'></i>
-				<p class="titulo-caracteristica">Durabilidad</p>
-				<p class="desc-caracteristica">Clasificación de resistencia al agua de 100 metros<br>Clasificación de resistencia al polvo</p>
+				<p class="titulo-caracteristica">Monitoreo de Frecuencia Cardíaca</p>
+				<p class="desc-caracteristica">Registro continuo y alertas<br> de variaciones anormales del pulso.</p>
 			</div>
 			<div class="caracteristica-item">
 				<i class='bx bxs-universal-access'></i>
@@ -117,30 +140,175 @@
 				<p class="desc-caracteristica">Funcionalidades de accesibilidad integradas para personas con dificultades visuales, motrices, auditivas y cognitivas.</p>
 			</div>
 			<div class="caracteristica-item">
-				<i class='bx bx-joystick-button'></i>
-				<p class="titulo-caracteristica">Controles</p>
-				<p class="desc-caracteristica">Botón de Acción personalizable<br>Digital Crown con respuesta háptica<br>Botón lateral<br>Gesto de doble toque</p>
+				<i class='bx bx-phone'></i>
+				<p class="titulo-caracteristica">Compatibilidad con iPhone</p>
+				<p class="desc-caracteristica">Se integra perfectamente con dispositivos iPhone.</p>
 			</div>
-		</div>
-		<div class="botones-caracteristica">
-			<h3 class="titulo-botones">Botones</h3>
-			<ol class="listado-botones">
-				<li>Micrófono</li>
-				<li>Bocina</li>
-				<li>Botón de Acción</li>
-				<li>Sirena</li>
-				<li>Micrófono</li>
-				<li>Botón lateral</li>
-				<li>Micrófono</li>
-				<li>Digital Crown</li>
-				<li>Profundímetro/sensor de temperatura del agua</li>
-			</ol>
-				<img src="Fotos/Característica/Botones.png" id="botones-img">
 		</div>
 	</section>
 
-	</main>
+	<hr>
 
+	<section id="testimonios">
+
+		<div class="reviews-clas">
+			<div class="reviews-container">
+				<h3 class="intro-testimonio"> Sus opiniones</h3>
+				<span class="star">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+				<p class="clasification"> 4.0 de 5 con +1500 reseñas</p>
+			</div>
+	
+			<div class="votos">
+				<div class="5star">5 estrellas <span class="barra"></span>80%</div>
+				<div class="4star">4 estrellas <span class="barra"></span>10%</div>
+				<div class="3star">3 estrellas <span class="barra"></span>6%</div>
+				<div class="2star">2 estrellas <span class="barra"></span>2%</div>
+				<div class="1star">1 estrella <span class="barra"></span>2%</div>
+			</div>
+		</div>
+
+	</section>
+
+		<hr>
+
+
+	<section id="compra">
+		<h2 class="intro-compra">Escoge el modelo perfecto para ti</h2>
+			<div class="container-compra">
+				<div class="productos">
+					<div class="img">
+						<h3 class="watchNumber">Apple Watch Series 9</h3>
+						<img src="Fotos/Compra/AWS9.png" alt="Apple Watch Series 9" id="AppleWacth">
+						<div class="colores">
+							<div class="color-red"></div>
+							<div class="color-pink"></div>
+							<div class="color-black"></div>
+							<div class="color-gray"></div>
+							<div class="color-blue"></div>
+						</div>
+						<p class="description-img">SmartWatch elegante con un rendimiento rápido, seguimiento de salud avanzado,
+							y una integración perfecta con el ecosistema de Apple.</p>
+							<div class="precio">
+								<p class="precio">$699.00</p>
+								<div class="proceso-container">
+									<button class="cantidadButton decrementar">-</button>
+									<input type="number" class="cantidad" value="0" min="1" max="10" />
+									<button class="cantidadButton incrementar">+</button>
+								</div>
+							</div>
+					</div>
+					<div class="img">
+						<h3 class="watchNumber">Apple Watch SE</h3>
+						<img src="Fotos/Compra/AWSE.png" alt="Apple Watch SE" id="AppleWatch">
+						<div class="colores">
+							<div class="color-white"></div>
+							<div class="color-blue"></div>
+							<div class="color-black"></div>
+						</div>
+						<p class="description-img">Versión más económica con funciones esenciales de salud y notificaciones,
+							ideal para usuarios que buscan un equilibrio entre costo y funcionalidad.</p>
+							<div class="precio">
+								<p class="precio">$399.00</p>
+								<div class="proceso-container">
+									<button class="cantidadButton decrementar">-</button>
+									<input type="number" class="cantidad" value="0" min="1" max="10" />
+									<button class="cantidadButton incrementar">+</button>
+								</div>
+							</div>
+					</div>
+					<div class="img">
+						<h3 class="watchNumber">Apple Watch Ultra 2</h3>
+						<img src="Fotos/Compra/AWU2.png" alt="Apple Watch Ultra 2" id="AppleWatch">
+						<div class="colores">
+							<div class="color-orange"></div>
+							<div class="color-blue"></div>
+							<div class="color-black"></div>
+							<div class="color-white"></div>
+						</div>
+						<p class="description-img">Un smartwatch premium diseñado para aventuras extremas,
+							con una pantalla grande, resistencia mejorada, y funciones avanzadas de salud y deportes.</p>
+							<div class="precio">
+								<p class="precio">$899.00</p>
+								<div class="proceso-container">
+									<button class="cantidadButton decrementar">-</button>
+									<input type="number" class="cantidad" value="0" min="1" max="10" />
+									<button class="cantidadButton incrementar">+</button>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="finalizarCompra">
+				<button id="AgregarProducto"> Agregar al carrito </button>
+			</div>
+
+<!-- Menú lateral -->
+ 
+<div id="menuLateral" class="menuLateral">
+	<div class="menuContent">
+			<span class="cerrar" id="cerrarMenu">&times;</span>
+			<h2>Tus productos adquiridos</h2>
+			<ul id="productosAdquiridos"></ul>
+			<div id="total">
+					Total: $<span id="precioFinal">0.00</span>
+			</div>
+			<button id="botonCompra" class="botonCompra">Comprar</button>
+	</div>
+</div>
+	</section>
+
+	<hr>
+
+	<footer id="PieDePagina">
+
+		<div class="info">
+			<ol>
+				<li>La información en este sitio web se proporciona únicamente con fines informativos y no debe ser utilizada como diagnóstico médico o consejo profesional.</li>
+				<li>La resistencia al agua y al polvo puede disminuir con el tiempo. No se recomienda el uso del dispositivo para actividades acuáticas extremas sin la debida protección.</li>
+				<li>Algunas funcionalidades, aplicaciones y servicios pueden no estar disponibles en todas las regiones o idiomas.</li>
+				<li>Consulta a tu proveedor de servicios móviles para obtener detalles sobre la compatibilidad de la conectividad celular y la disponibilidad de planes.</li>
+				<li>Las especificaciones del producto están sujetas a cambios sin previo aviso, según actualizaciones del fabricante.</li>
+				<li>Las imágenes mostradas en este sitio web son referenciales y pueden no representar con exactitud el producto final.</li>
+				<li>El uso de la app Oxígeno en Sangre, Signos Vitales y Control del Ciclo está destinado exclusivamente para el bienestar y no debe usarse con fines médicos.</li>
+				<li>La disponibilidad de correas y otros accesorios puede variar según la ubicación y los distribuidores locales.</li>
+				<li>Verifica la disponibilidad de productos y funcionalidades con los distribuidores autorizados en tu área.</li>
+				<li>La duración de la batería puede variar según el uso, la configuración y otros factores externos.</li>
+			</ol>
+		</div>
+		
+		<hr>
+
+		<h3>¿Dónde encontrarnos?</h3>
+		<img src="Fotos/PieDePagina/LocationInt.png" alt="Location" id="location">
+
+		<hr>
+
+		<section class="enlaces">
+			<div class="EnlacesExternos">
+					<a href="https://x.com/apple" target="_blank">
+							<img src="Fotos/PieDePagina/X.png" alt="Twitter Logo">
+					</a>
+					<a href="https://www.facebook.com/apple/?locale=es_LA" target="_blank">
+							<img src="Fotos/PieDePagina/Facebook.jpg" alt="Facebook Logo">
+					</a>
+					<a href="https://www.instagram.com/apple/" target="_blank">
+							<img src="Fotos/PieDePagina/Instagram.jpeg" alt="Instagram Logo">
+					</a>
+					<a href="https://github.com/RafaGdelB23" target="_blank">
+							<img src="Fotos/PieDePagina/Github.png" alt="Github Logo">
+					</a>
+			</div>
+			<div class="ArchivosExternos">
+					<p><a href="TerminosCondiciones.html" >Términos y Condiciones</a><a href="PolíticaDePrivacidad.html">Política y Privacidad</a></p>
+			</div>
+			<div class="derechos">
+				<p>Copyright © 2024 Apple Inc. Todos los derechos reservados.</p>
+			</div>
+</section>
+
+	</footer>
+
+	</main>
 	<script src="js/main.js"></script>
 </body>
 </html>

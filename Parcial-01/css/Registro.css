@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    margin: 20px 20px 20px 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.Registro{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.seguridad{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: small;
+}
+
+.Datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+label{
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input{
+    margin-right: 1.6em;
+    max-height: 2em;
+}
+
+.Condiciones {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30em;
+}
+
+.condiciones-label {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+}
+
+.condiciones-label a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.Condiciones input {
+    margin-top: -2em;
+    margin-bottom: 1em;
+    margin-right: 8em;
+}
+
+.hecho{
+    margin-left: 6em;
+    margin-top: 2em;
+    background-color: black;
+    color:white;
+    padding: 1em;
+    max-width: 5.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hecho:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+main{
+    background-color: rgb(247, 247, 247);
+    padding: 0.5em;
+    border-radius: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+        background-color: rgb(255, 255, 255);
+}
